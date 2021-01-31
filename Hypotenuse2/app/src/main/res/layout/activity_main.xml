@@ -29,9 +29,10 @@
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:src="@drawable/triangle"
-                android:scaleType=""
+                android:scaleType="fitCenter"
                 />
             <TextView
+                android:id="@+id/Cresult"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -40,18 +41,16 @@
                 android:textAlignment="center"
                 />
 
-
-
         </LinearLayout>
 
 
         <EditText
             android:id="@+id/Avalue"
             android:textAlignment="center"
-            android:text="Leg a"
+            android:hint="leg a"
             android:textColor="#b4b4b4"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="wrap_content"
             android:background="@drawable/leg_a"
             android:inputType="number"
             android:layout_marginTop="30dp"
@@ -60,16 +59,17 @@
         <EditText
             android:id="@+id/Bvalue"
             android:textAlignment="center"
-            android:text="Leg b"
+            android:hint="leg b"
             android:textColor="#b4b4b4"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@drawable/leg_b"
             android:inputType="number"
             />
 
         <Button
+            android:id="@+id/SolveButt"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="SOLVE"
@@ -110,5 +110,3 @@
     </LinearLayout>
 
 </LinearLayout>
-
-
